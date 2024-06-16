@@ -5,7 +5,6 @@ export default function NoneWorkspace() {
     return (
         <>
         <FileBrowser/>
-        <Editor/>
         </>
     )
 }

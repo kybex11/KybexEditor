@@ -5,3 +5,7 @@
 export function CheckLatestWorkspace() {
   return window['go']['main']['App']['CheckLatestWorkspace']();
 }
+
+export function CurrentProject() {
+  return window['go']['main']['App']['CurrentProject']();
+}

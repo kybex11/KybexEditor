@@ -16,6 +16,10 @@ type LatestStruct struct {
 	Latest string
 }
 
+type CurrentStruct struct {
+	currentOpenedProject string
+}
+
 // NewApp creates a new App application struct
 func NewApp() *App {
 	return &App{}
@@ -40,4 +44,19 @@ func (a *App) CheckLatestWorkspace() string {
 	}
 
 	return payload.Latest
+}
+
+func (a *App) CurrentProject() string {
+	content, err := ioutil.ReadFile("./data.json")
+	if err != nil {
+		log.Fatal("Error when opening file: ", err)
+	}
+
+	var payload CurrentStruct
+	err = json.Unmarshal(content, &payload)
+	if err != nil {
+		log.Fatal("Error during Unmarshal(): ", err)
+	}
+
+	return payload.currentOpenedProject
 }
