@@ -3,4 +3,4 @@
 
 export function CheckLatestWorkspace():Promise<string>;
 
-export function CurrentProject():Promise<void>;
+export function CurrentProject():Promise<string>;
