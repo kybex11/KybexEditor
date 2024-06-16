@@ -16,10 +16,10 @@ export default function FileBrowser() {
     }, []);
 
     useEffect(() => {
-        if (currentProjectName) {
-            setProjectTextName("");
-        } else {
+        if (currentProjectName && currentProjectName?.length <= 1) {
             setProjectTextName("No workspace opened");
+        } else {
+            setProjectTextName(currentProjectName);
         }
     }, [currentProjectName]);
 
