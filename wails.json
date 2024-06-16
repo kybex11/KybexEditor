@@ -1,13 +1,13 @@
 {
-  "$schema": "https://wails.io/schemas/config.v2.json",
-  "name": "KybexEditor",
-  "outputfilename": "KybexEditor",
-  "frontend:install": "npm install",
-  "frontend:build": "npm run build",
-  "frontend:dev:watcher": "npm run dev",
-  "frontend:dev:serverUrl": "auto",
-  "author": {
-    "name": "kybex11",
-    "email": "artm.22@internet.ru"
-  }
+    "$schema": "https://wails.io/schemas/config.v2.json",
+    "name": "KybexEditor",
+    "outputfilename": "KybexEditor",
+    "frontend:install": "npm install",
+    "frontend:build": "npm run build",
+    "frontend:dev:watcher": "npm run dev",
+    "frontend:dev:serverUrl": "auto",
+    "author": {
+        "name": "kybex11",
+        "email": "artm.22@internet.ru"
+    }
 }

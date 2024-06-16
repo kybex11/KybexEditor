@@ -1,24 +1,30 @@
 {
-  "name": "frontend",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "highlight.js": "^11.9.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "sass": "^1.77.5"
-  },
-  "devDependencies": {
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^2.0.1",
-    "typescript": "^4.6.4",
-    "vite": "^3.0.7"
-  }
+    "name": "frontend",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@monaco-editor/react": "^4.6.0",
+        "codejar": "^4.2.0",
+        "highlight.js": "^11.9.0",
+        "monaco-editor": "^0.49.0",
+        "monaco-editor-webpack-plugin": "^7.1.0",
+        "react": "^16.14.0",
+        "react-app-rewired": "^2.2.1",
+        "react-codejar": "^1.1.2",
+        "react-dom": "^16.14.0",
+        "sass": "^1.77.5"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
+        "@vitejs/plugin-react": "^2.0.1",
+        "typescript": "^4.6.4",
+        "vite": "^3.0.7"
+    }
 }
