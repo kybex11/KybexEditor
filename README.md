@@ -1,8 +1,5 @@
 # README
 
-## F##k Monaco Editor use CodeJar 
-
-
 ## About
 
 This is the official Wails React-TS template.
