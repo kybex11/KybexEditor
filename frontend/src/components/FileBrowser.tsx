@@ -1,6 +1,5 @@
 import '../styles/FileBrowser.scss';
 import { useState, useEffect } from 'react';
-
 import { CurrentProject } from '../../wailsjs/go/main/App';
 
 export default function FileBrowser() {
@@ -11,6 +10,7 @@ export default function FileBrowser() {
         async function fetchCurrentProjectName() {
             const result = await CurrentProject();
             setCurrentProjectName(result);
+            console.log(result);
         }
         fetchCurrentProjectName();
     }, []);

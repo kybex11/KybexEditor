@@ -17,7 +17,7 @@ type LatestStruct struct {
 }
 
 type CurrentStruct struct {
-	currentOpenedProject string
+	CurrentOpenedProject string
 }
 
 // NewApp creates a new App application struct
@@ -58,5 +58,5 @@ func (a *App) CurrentProject() string {
 		log.Fatal("Error during Unmarshal(): ", err)
 	}
 
-	return payload.currentOpenedProject
+	return payload.CurrentOpenedProject
 }
