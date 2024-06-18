@@ -9,7 +9,10 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@emotion/react": "^11.11.4",
+        "@emotion/styled": "^11.11.5",
         "@monaco-editor/react": "^4.6.0",
+        "@mui/material": "^5.15.20",
         "codejar": "^4.2.0",
         "highlight.js": "^11.9.0",
         "monaco-editor-webpack-plugin": "^7.1.0",
