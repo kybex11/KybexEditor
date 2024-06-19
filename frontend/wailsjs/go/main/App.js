@@ -9,3 +9,7 @@ export function CheckLatestWorkspace() {
 export function CurrentProject() {
   return window['go']['main']['App']['CurrentProject']();
 }
+
+export function ListFilesAndFolders(arg1) {
+  return window['go']['main']['App']['ListFilesAndFolders'](arg1);
+}

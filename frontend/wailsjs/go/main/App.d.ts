@@ -4,3 +4,5 @@
 export function CheckLatestWorkspace():Promise<string>;
 
 export function CurrentProject():Promise<string>;
+
+export function ListFilesAndFolders(arg1:string):Promise<Array<string>>;

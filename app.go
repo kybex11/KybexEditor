@@ -5,6 +5,8 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"log"
+	"os"
+	"path/filepath"
 )
 
 // App struct
@@ -59,4 +61,20 @@ func (a *App) CurrentProject() string {
 	}
 
 	return payload.CurrentOpenedProject
+}
+
+func (a *App) ListFilesAndFolders(path string) ([]string, error) {
+	var files []string
+	err := filepath.Walk(path, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+		files = append(files, path)
+		return nil
+	})
+
+	if err != nil {
+		return nil, err
+	}
+	return files, nil
 }
