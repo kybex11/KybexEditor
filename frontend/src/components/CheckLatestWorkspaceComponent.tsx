@@ -12,25 +12,16 @@ export default function CheckLatestWorkspaceComponent() {
         async function fetchLatestWorkspace() {
             const result = await CheckLatestWorkspace();
             setLatest(result);
+            console.log(result);
         }
         fetchLatestWorkspace();
     })
 
-    if (latest) {
-        return (
-            <>
-                <Editor/>
-                <LatestWorkspace/>
-            </>
-        )
-    } else {
-        return (
-            <>
-                <Editor/>
-                <NoneWorkspace/>
-            </>
-
-        ) 
-    }
+    return (
+        <>  
+        {latest && <LatestWorkspace/>} 
+        {!latest && <NoneWorkspace/>}
+        </>
+    )
 
 }
