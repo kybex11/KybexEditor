@@ -3,7 +3,7 @@ import CheckLatestWorkspaceComponent from './components/CheckLatestWorkspaceComp
 import Upper from './components/Upper';
 import FileBrowser from './components/FileBrowser';
 
-export default function App() {
+export default function App() {  
   return (
     <>
       <Upper />
